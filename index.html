@@ -85,6 +85,15 @@ footer .flinks{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
  .cards3,.cards2,.parents{grid-template-columns:1fr}
  .hero .pic{margin:0 auto}
 }
+.featured{max-width:680px;margin:8px auto 0;padding:0 16px 20px;text-align:center}
+.featured h2{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#7a5a44;margin:0 0 10px;font-weight:700}
+.feat-row{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.feat-track{display:flex;align-items:center;gap:28px;width:max-content;animation:featslide 30s linear infinite}
+.feat-track a{display:flex;align-items:center;flex:none;color:#3f261a;font-weight:700;font-size:14px;text-decoration:none}
+.feat-track img{height:32px;width:auto;display:block}
+.feat-row:hover .feat-track{animation-play-state:paused}
+@keyframes featslide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.feat-track{animation:none}.feat-row{overflow-x:auto}}
 </style>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC90lEQVR4nO2W3W4bRRTHf2fGu1nHcZ3EEDklJRCgBQKpEahVEG3VIKpIBQlRqU8AFzxEHwH1AXgAbhFwRa6KBCUSLRIgpVSNWwRqGueDOLV37d31HC5sREWdYBBVVclHmqv5+P/O18zIV6dHlIdo5mGKDwAGAAOARw/grxtLcORJ5fG9F0t3/F8A2j0vkkOAUg0XWN36EARaUuy9QWH0iEGs7AnTJ4AgQKwFLlcusNGYoxFOY5IhdqOnWa5cYCc+3BXpHJkJhKFRgw1g7AWDl+tNkOlPX0CVlitRfu0yM7MtpiYu4mzCdvUQ7ofvoZrthklBhZfOxcShsvJ5QGnesXONDuDfXh7p9zEaLsKzixH5OYeJFOLuRADOh7s/WSpLOerrDoDn30vYum7ZvGYZOgDNbe0JsH8KuoWUHc8wdz6icPIsX65+zI3d99HEQ9seP/76LpfWPqFw6hxz5xtki7az1VNqtwyaakec+8X/EUAAVHhmIcErtFFThsdeJy68gaqiaYqdPEMrV0btq9iRNjOnUyaPOVo1Ia53srdfN+ydgm64/Lzh+Ad1aJZR/zdk5jhsrhBHm4DgZ8egOAu3voXmNHhX2d7IcP2zgCR0Pb2+13oWof4ZmoxQeiWm3XRY8zu0a7TrVZbXTnGweRQrll8yV5kPVjBpDcw2YpTbyx5Jw/33e8AYUIXRacf0PEjGA3sTmVrAvniRoyfeIS76RGOW8sm3sbMfwZNnEVuBYUsadfq+D/09IqAwdEB46kQT/BTjC+wKjL8F8Q45P+XwwhOdxWEMzS0YfxM2PyW6IzSqBnBoH/11XwTEAApTx5SgBHdXfda/G+5QNb8GmwczjKs7XN2BBOCNIo1vwCqVS1lc2/XlPexThNY3qBpckgJQfE6YORPilxaRg4tIbgIQNNzA3V4ivfMFN5cCNn6mZ7//a4B7zVhwbZh42XFkPqTWsoxMTIJAWF0n7yfcuJJj7YogBtT16X6/AA/SHq3/wABgADAAeBD2B8b0G1ZC5xIPAAAAAElFTkSuQmCC">
@@ -183,6 +192,12 @@ footer .flinks{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
 <p style="font-size:12.5px;margin-top:10px;color:#ffd9c2">Works in the browser. Android app coming soon.</p>
 </div>
 </div>
+<section class="featured" id="featured" aria-label="Featured on" hidden>
+<h2>Featured on</h2>
+<div class="feat-row"><div class="feat-track">
+<!-- BADGES: add each badge as <a href="URL" target="_blank" rel="noopener"><img src="/badges/NAME.png" alt="NAME" height="32"></a>, listed twice in a row for a seamless loop; then remove the hidden attribute on the section. -->
+</div></div>
+</section>
 <footer>
 <div class="fwrap">
 <strong style="color:#fff"><img src="/dino-logo.svg" width="54" height="40" alt="" style="vertical-align:middle;margin:-6px 8px -6px 0">Dino Sums</strong> - free maths practice for Classes 1-5
