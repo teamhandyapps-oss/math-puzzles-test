@@ -79,17 +79,20 @@ footer .flinks{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
 .topicrow .tag{margin-left:auto;flex:none;font-size:12px;font-weight:800;border-radius:999px;padding:4px 10px}
 .tag.page{background:var(--orange);color:#fff}
 .tag.app{background:var(--soft);color:#7a5a44;border:1px solid var(--line)}
+header{display:block}
+header .bar{max-width:680px;margin:0 auto;display:flex;align-items:center;gap:10px}
+header .brand{font-weight:800;font-size:20px;display:flex;align-items:center;gap:8px;flex:1}
+header nav{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+header nav a{color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:6px 10px;border-radius:10px;border:none}
+header nav a.ctab{background:#fff;color:var(--orange);font-weight:800}
+@media (max-width:760px){header nav a:not(.ctab){display:none}header .brand{font-size:18px}header .bar{flex-wrap:nowrap}}
 </style>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC90lEQVR4nO2W3W4bRRTHf2fGu1nHcZ3EEDklJRCgBQKpEahVEG3VIKpIBQlRqU8AFzxEHwH1AXgAbhFwRa6KBCUSLRIgpVSNWwRqGueDOLV37d31HC5sREWdYBBVVclHmqv5+P/O18zIV6dHlIdo5mGKDwAGAAOARw/grxtLcORJ5fG9F0t3/F8A2j0vkkOAUg0XWN36EARaUuy9QWH0iEGs7AnTJ4AgQKwFLlcusNGYoxFOY5IhdqOnWa5cYCc+3BXpHJkJhKFRgw1g7AWDl+tNkOlPX0CVlitRfu0yM7MtpiYu4mzCdvUQ7ofvoZrthklBhZfOxcShsvJ5QGnesXONDuDfXh7p9zEaLsKzixH5OYeJFOLuRADOh7s/WSpLOerrDoDn30vYum7ZvGYZOgDNbe0JsH8KuoWUHc8wdz6icPIsX65+zI3d99HEQ9seP/76LpfWPqFw6hxz5xtki7az1VNqtwyaakec+8X/EUAAVHhmIcErtFFThsdeJy68gaqiaYqdPEMrV0btq9iRNjOnUyaPOVo1Ia53srdfN+ydgm64/Lzh+Ad1aJZR/zdk5jhsrhBHm4DgZ8egOAu3voXmNHhX2d7IcP2zgCR0Pb2+13oWof4ZmoxQeiWm3XRY8zu0a7TrVZbXTnGweRQrll8yV5kPVjBpDcw2YpTbyx5Jw/33e8AYUIXRacf0PEjGA3sTmVrAvniRoyfeIS76RGOW8sm3sbMfwZNnEVuBYUsadfq+D/09IqAwdEB46kQT/BTjC+wKjL8F8Q45P+XwwhOdxWEMzS0YfxM2PyW6IzSqBnBoH/11XwTEAApTx5SgBHdXfda/G+5QNb8GmwczjKs7XN2BBOCNIo1vwCqVS1lc2/XlPexThNY3qBpckgJQfE6YORPilxaRg4tIbgIQNNzA3V4ivfMFN5cCNn6mZ7//a4B7zVhwbZh42XFkPqTWsoxMTIJAWF0n7yfcuJJj7YogBtT16X6/AA/SHq3/wABgADAAeBD2B8b0G1ZC5xIPAAAAAElFTkSuQmCC">
 <meta name="theme-color" content="#c2410c">
 </head>
 <body>
-<header>
-<a class="home" href="/" aria-label="Dino Sums home"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg></a>
-<span class="brand"><img src="/dino-logo.svg" width="54" height="40" alt="" style="vertical-align:middle;margin:-6px 8px -6px 0">Dino Sums</span>
-<nav><a href="/class-2-maths/">Class 2</a></nav>
-</header>
+<header><div class="bar"><span class="brand"><img src="/dino-logo.svg" width="54" height="40" alt="" style="vertical-align:middle;margin:-6px 8px -6px 0">Dino Sums</span><nav><a href="/#classes">Classes</a><a href="/#worksheets">Worksheets</a><a href="/#parents">For parents</a><a class="ctab" href="/app/">Open the app</a></nav></div></header>
 <main class="wrap">
 <p class="crumbs"><a href="/">Home</a> &rsaquo; <a href="/class-2-maths/">Class 2 Maths</a> &rsaquo; Subtraction with borrowing</p>
 <h1>Subtraction with borrowing for Class&nbsp;2</h1>
